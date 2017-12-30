@@ -57,6 +57,40 @@ venn.plot <- draw.quad.venn(
 
 
 
+library("VennDiagram")
+venn.plot=draw.pairwise.venn(
+  
+  area1=2951,
+  area2=1266,
+  cross.area=38,
+  #category=c("ci+","ci-"),
+  cex=0,
+  ext.line.lty="blank",   # design the pattern of line connecting the external area labels to their anchor points
+  lwd=8,
+  lty="solid",
+  fill=c("red","green"),
+  rotation.degree=180
+  
+  
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 library("pheatmap")
 data=read.delim("D:/demo/song/mRNA/pathway_annotation_up.txt",head=T,sep="\t")
 data2=data[,2:ncol(data)]
